@@ -2,7 +2,7 @@ self.addEventListener("install", (event) => {
   console.log("Service Worker: Installed");
   event.waitUntil(
     caches.open("static-cache").then((cache) => {
-      return cache.addAll(["/", "/index.html"]);
+      return cache.addAll(["/verification/", "/verification/index.html"]);
     })
   );
 });
